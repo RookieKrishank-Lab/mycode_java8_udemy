@@ -46,7 +46,10 @@ public class ConsumerMain {
         Consumer<String> consumer = (s) -> System.out.println("String to lower case "+s.toLowerCase());
         consumer.accept("HI");
 
+        getNameAndActivity();
+
+         */
         printName();
-        */getNameAndActivity();
+
     }
 }

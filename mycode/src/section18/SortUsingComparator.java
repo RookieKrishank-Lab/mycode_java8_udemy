@@ -8,11 +8,11 @@ import java.util.function.Consumer;
 
 public class SortUsingComparator {
 
-    static Consumer<Student> studentConsumer = Student::getName;
+    static Consumer<Student> studentConsumer = student ->  System.out.println(student.getName());            //Student::getName
 
     public static void main(String[] args) {
         List<Student> studentList = StudentDataBase.getAllStudents();
         System.out.println("Before sorting");
-        System.out.println(studentList.forEach(studentConsumer));
+        studentList.forEach(studentConsumer);
     }
 }
