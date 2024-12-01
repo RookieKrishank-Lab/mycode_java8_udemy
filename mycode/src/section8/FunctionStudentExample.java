@@ -10,7 +10,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 /*
-* Take studentList as argument and in return we will get a Map with student name and gpa. Student should be greater than grade lvl 3
+* Take studentList as argument and in return we will get a Map with student name and gpa. Student in the map should be greater than grade lvl 3
 * */
 public class FunctionStudentExample {
 

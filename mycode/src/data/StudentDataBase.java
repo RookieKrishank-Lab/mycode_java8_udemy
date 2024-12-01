@@ -7,6 +7,7 @@ import java.util.function.Supplier;
 
 public class StudentDataBase {
 
+    // return a single student object
     public static Supplier<Student> studentSupplier = () -> {
         return  new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyball"));
     };
@@ -44,6 +45,7 @@ public class StudentDataBase {
         Student student6 = new Student("James",4,3.9,"male", 22,Arrays.asList("swimming", "basketball","baseball","football"));
 
         List<Student> students = Arrays.asList(student1,student2,student3,student4,student5,student6);
+//        List<Student> students = Arrays.asList(student5,student6);
         return students;
     }
 }
