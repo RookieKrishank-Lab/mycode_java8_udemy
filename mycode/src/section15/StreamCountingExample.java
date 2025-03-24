@@ -2,9 +2,11 @@ package section15;
 
 import data.StudentDataBase;
 
+import java.util.Objects;
 import java.util.stream.Collectors;
 import static java.util.stream.Collectors.counting;
 
+//using count we
 public class StreamCountingExample {
 
     public static long count1(){
@@ -28,6 +30,7 @@ public class StreamCountingExample {
     public static long countWithCondition() {
         return StudentDataBase.getAllStudents()
                 .stream()
+                .filter(Objects::nonNull)// Filter out null values
                 .filter(student -> student.getGpa() > 2)
                 .collect(counting());
     }

@@ -4,6 +4,7 @@ import java.util.function.Function;
 
 public class FunctionExample {
 
+    //Function<String1,String2> - String1 is the argument and String2 is the output
     static Function<String,String> upperCase = s -> s.toUpperCase();
     static Function<String,String> concat = s -> s.toUpperCase().concat("end");
 

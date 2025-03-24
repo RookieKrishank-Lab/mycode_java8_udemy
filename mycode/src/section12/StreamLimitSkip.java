@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public class StreamLimitSkip {
 
-    // limit
+    // limit. limit is used to put an end point like till that point we will perform operation in our stream
     public static Optional<Integer> limitList(List<Integer> list){
         return list.stream()
                 .peek(System.out::println)
@@ -14,7 +14,7 @@ public class StreamLimitSkip {
                 .reduce(Integer::sum);
     }
 
-    // skip
+    // skip. skip is used to skip number of element and then perform the mentioned operation
     public static Optional<Integer> skipList(List<Integer> list){
         return list.stream()
                 .peek(System.out::println)

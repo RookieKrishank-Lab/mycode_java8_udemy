@@ -19,7 +19,7 @@ public class ConsumerMain {
         //Consumer<Student> studentConsumer = student -> System.out.println(student);
         //Consumer<Student> studentConsumer = System.out::println;
         //List<Student> allStudents = StudentDataBase.getAllStudents();
-        allStudents.forEach(studentConsumer);
+        allStudents.forEach(studentName);                                   //here allStudents is a list and we are iterating the list using forEach and to print each element we are using studentConsumer
     }
 
     public static void getNameAndActivity(){
